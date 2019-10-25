@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.wero.a1_20154816395"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.google.code.gson:gson:2.8.2'            //json解析库
+    implementation 'com.github.clans:fab:1.6.4'           //悬浮球库
+    implementation 'de.hdodenhof:circleimageview:2.2.0'         //圆角库
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'      //图片加载
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'  //图片加载
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'         //okhttp
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation "io.reactivex.rxjava2:rxjava:2.1.12"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    //retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.blankj:utilcode:1.14.2'                 //工具库
+    implementation 'com.sackcentury:shinebutton:0.2.0'          //button
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:2.0.5'
+    implementation 'com.xw.repo:xedittext:2.1.0@aar'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+}

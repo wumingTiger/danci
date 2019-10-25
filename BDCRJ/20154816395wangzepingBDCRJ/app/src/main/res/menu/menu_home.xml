@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/tb_query"
+        android:title="@string/tb_search"
+        android:icon="@drawable/tb_search"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/tb_logout"
+        android:title="@string/tb_logout"
+        android:icon="@drawable/logout"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+</menu>

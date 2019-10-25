@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_head"
+            android:text="不正确"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/sad"
+            android:padding="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black_less"
+            android:background="@color/wrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_below="@+id/dialog_head"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dialog_en"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dialog_right"
+                android:layout_below="@+id/dialog_en"
+                android:text="正确答案:"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dialog_ch"
+                android:layout_below="@+id/dialog_right"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/biger_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dialog_ch2"
+                android:layout_below="@+id/dialog_ch"
+                android:text=""
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/lowHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/dialog_continue"
+                android:text="继续"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/dialog_ch2"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:textSize="20sp"
+                android:textColor="@color/cfore2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

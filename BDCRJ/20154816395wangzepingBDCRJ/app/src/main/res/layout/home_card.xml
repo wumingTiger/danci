@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/card"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_height="200dp">
+    <TextView
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每日一句"
+        android:textColor="@color/cfore2"
+        android:textSize="22sp" />
+    <ImageButton
+        android:id="@+id/ib_home_voice"
+        android:layout_toRightOf="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black_less"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/voice1"/>
+    <TextView
+        android:id="@+id/tv_daily_en"
+        android:layout_below="@+id/rl_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tv_daily_ch"
+        android:layout_below="@+id/tv_daily_en"
+        android:layout_width="match_parent"
+        android:textColor="@color/lowHint"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_last"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="下一个"
+            android:textColor="@drawable/text_click_style"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

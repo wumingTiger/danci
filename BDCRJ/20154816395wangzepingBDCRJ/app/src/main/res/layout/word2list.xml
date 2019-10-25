@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/black_less">
+    <TextView
+        android:id="@+id/tv_word_en"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:id="@+id/tv_word_ch"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="24sp"
+        android:layout_width="wrap_content" />
+    <ImageButton
+        android:id="@+id/ib_voice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black_less"
+        android:src="@drawable/voice1"/>
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:id="@+id/sb_star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:src="@color/cfore2"
+        app:btn_color="@color/cfore2"
+        app:btn_fill_color="@color/cfore1"
+        app:allow_random_color="true"
+        app:enable_flashing="false"
+        app:big_shine_color="@color/cfore1"
+        app:click_animation_duration="200"
+        app:shine_animation_duration="1300"
+        app:shine_turn_angle="20"
+        app:small_shine_offset_angle="40"
+        app:shine_distance_multiple="1.4"
+        app:small_shine_color="#07e922"
+        app:shine_count="20"
+        app:siShape="@drawable/star2"/>
+</LinearLayout>

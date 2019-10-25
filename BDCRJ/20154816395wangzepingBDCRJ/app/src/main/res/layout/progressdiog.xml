@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:orientation="vertical"
+    android:layout_height="100dp">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avl_pacaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        app:indicatorName="PacmanIndicator"
+        app:indicatorColor="@color/cfore2"/>
+</LinearLayout>

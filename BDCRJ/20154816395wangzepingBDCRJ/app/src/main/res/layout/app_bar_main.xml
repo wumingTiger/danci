@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context="com.example.wero.a1_20154816395.mvp.nomvpactivity.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <!--toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <!--实现导航-->
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/stl_home"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            tl:tl_tab_space_equal="true"
+            app:tl_textBold="true"
+            tl:tl_indicator_corner_radius="2dp"
+            tl:tl_textsize="18dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--tablayout 与 viewpager 关联 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--悬浮球-->
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/fab_add"
+        app:fab_colorNormal="@color/cfore2"
+        app:fab_colorPressed="@color/cfore1" />
+
+</android.support.design.widget.CoordinatorLayout>
